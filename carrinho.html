@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Shoperuibe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content container">
+            <a href="index.html" class="logo">
+               <img src="img/shoperuibe-logo.png" alt="Logo Shoperuibe">
+            </a>
+            
+            <a href="carrinho.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Seu Carrinho</h1>
+
+        <div class="cart-layout">
+            
+            <div class="cart-listing">
+                <div id="cart-items-container">
+                    </div>
+                
+                <div id="empty-cart-message" class="empty-cart-message" style="display:none;">
+                    <h2>Seu carrinho está vazio! 😔</h2>
+                    <p>Que tal dar uma olhada em <a href="index.html">nossos produtos</a>?</p>
+                </div>
+
+                <a href="index.html" class="btn-back-shopping">
+                    <i class="fas fa-chevron-left"></i> Continuar Comprando
+                </a>
+            </div>
+
+            <div class="summary-box">
+                
+                <div class="mascot-container">
+                    <img src="img/mascote-rui-tubarao.png" alt="Mascote Rui, um tubarão, pronto para seu pedido" class="mascot-image">
+                    <p class="mascot-greeting">Olá! Sou o Rui e estou aqui para finalizar seu pedido.</p>
+                </div>
+                <h4>Resumo do Pedido</h4>
+                
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">R$ 0,00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Frete:</span>
+                    <span>R$ 10,00</span>
+                </div>
+                
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total-amount">R$ 10,00</span>
+                </div>
+                
+                <button class="btn-checkout" disabled>
+                    <i class="fab fa-whatsapp"></i> Finalizar Pedido
+                </button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        </footer>
+
+    <div class="mobile-nav">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i> Início
+        </a>
+        <a href="carrinho.html" class="nav-item active">
+            <i class="fas fa-shopping-cart"></i> Carrinho
+        </a>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

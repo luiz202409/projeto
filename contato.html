@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Shoperuibe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+    <a href="index.html" class="logo">
+    <img src="img/shoperuibe-logo.png" alt="Logo Shoperuibe">
+</a>
+                <img src="img/mascote-rui.png" alt="Mascote Rui" class="header-mascot">
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar produtos, categorias...">
+            </div>
+
+            <div class="header-icons">
+                <a href="#" class="search-icon">🔍</a> 
+                <a href="#" class="account-icon">👤</a> 
+                <a href="carrinho.html" class="cart-icon">🛒</a> 
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="contact-container">
+            <h1>Fale Conosco</h1>
+            <p class="subtitle">Envie sua mensagem e responderemos em até 48 horas.</p>
+
+            <form class="contact-form">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Shoperuibe. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <nav class="mobile-nav">
+        <a href="index.html" class="nav-item">
+            🏠
+            <span>Home</span>
+        </a>
+        <a href="#" class="nav-item">
+            🔎
+            <span>Buscar</span>
+        </a>
+        <a href="carrinho.html" class="nav-item">
+            🛒
+            <span>Carrinho</span>
+        </a>
+        <a href="#" class="nav-item">
+            👤
+            <span>Conta</span>
+        </a>
+    </nav>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

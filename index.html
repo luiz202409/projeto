@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoperuibe - Loja de Produtos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content container">
+            <a href="index.html" class="logo">
+    <img src="img/shoperuibe-logo.png" alt="Logo Shoperuibe">
+</a>
+            
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar produtos..." oninput="filterProducts()">
+            </div>
+            
+            <a href="carrinho.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Produtos em Destaque</h1>
+        
+        <div class="shop-grid" id="shop">
+            </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            
+            <section class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Sua loja de confiança, oferecendo produtos de qualidade para todo o Brasil.</p>
+            </section>
+            
+            <section class="footer-section footer-contact">
+                <h3>Contato</h3>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> 
+                    Rua Osmar Soares Magalhaes, 255 - Centro
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i> 
+                    contato@shoperuibe.com.br
+                </p>
+                <p>
+                    <i class="fab fa-whatsapp"></i> 
+                    <a href="tel:+5513997679355" style="color: inherit; text-decoration: none;">(13) 997679355</a>
+                </p>
+            </section>
+            
+            <section class="footer-section">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <div class="mobile-nav">
+        <a href="index.html" class="nav-item active">
+            <i class="fas fa-home"></i> Início
+        </a>
+        <a href="carrinho.html" class="nav-item">
+            <i class="fas fa-shopping-cart"></i> Carrinho
+        </a>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
