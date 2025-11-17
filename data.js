@@ -7,7 +7,7 @@ const PRODUCTS = [
             "img/produtos/tenis-runner-b.jpg", // Vista lateral
             "img/produtos/tenis-runner-c.jpg"  // Detalhe do solado
         ],
-        price: 199.90,
+        price: 149.90,
         category: "Calçados"
     },
     {
@@ -45,4 +45,5 @@ const PRODUCTS = [
 ];
 
 // O estado do carrinho continua o mesmo
+
 let shoppingCart = JSON.parse(localStorage.getItem("data")) || [];
